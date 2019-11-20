@@ -1,6 +1,9 @@
-﻿using Microsoft.Xna.Framework;
+﻿using Engine.Engines;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
+using System.Collections.Generic;
 
 namespace TiledSpriteExample
 {
@@ -11,9 +14,12 @@ namespace TiledSpriteExample
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        TiledPlayer player;
+        private TileLayer t_layer;
 
         public Game1()
         {
+            IsMouseVisible = true;
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
@@ -27,7 +33,7 @@ namespace TiledSpriteExample
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            new InputEngine(this);
             base.Initialize();
         }
 
@@ -38,8 +44,22 @@ namespace TiledSpriteExample
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
+            Helper.SpriteSheet = Content.Load<Texture2D>("tank tiles 64 x 64");
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            player = new TiledPlayer(
+                new Vector2(100,100),
+                new List<TileRef>()
+                {
+                    new TileRef(15,9,0),
+                    new TileRef(16,9,0),
+                    new TileRef(17,9,0),
+                    new TileRef(18,9,0),
+                    new TileRef(19,9,0),
+                    new TileRef(20,9,0),
+                    new TileRef(21,9,0),
+                }, 
+                64, 64, 1.0f);
+            t_layer = new TileLayer();
             // TODO: use this.Content to load your game content here
         }
 
@@ -61,7 +81,8 @@ namespace TiledSpriteExample
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-
+            
+            player.Update(gameTime);
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -74,9 +95,11 @@ namespace TiledSpriteExample
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
+            spriteBatch.Begin();
+            t_layer.Draw(spriteBatch);
+            player.Draw(spriteBatch, Helper.SpriteSheet);
             // TODO: Add your drawing code here
-
+            spriteBatch.End();
             base.Draw(gameTime);
         }
     }

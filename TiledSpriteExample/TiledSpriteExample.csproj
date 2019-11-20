@@ -42,8 +42,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Game1.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="InputEngine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tile.cs" />
+    <Compile Include="TiledPlayer.cs" />
+    <Compile Include="TiledSprite.cs" />
+    <Compile Include="TileLayer.cs" />
+    <Compile Include="TileRef.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">
@@ -53,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\tank tiles 64 x 64.png" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>
