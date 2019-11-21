@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TiledSpriteExample.Game1" Collapsed="true">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEECAAAAAAwICAAAAAAAAAAAAAAgBAAIAAAAAAAQ=</HashCode>
+      <FileName>Game1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiledSpriteExample.Helper" Collapsed="true">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiledSpriteExample.Program" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiledSpriteExample.Tile">
+    <Position X="8.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAIAAQAAAAAgABAACAAAAAAAAABABAAAQgAYBA=</HashCode>
+      <FileName>Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiledSpriteExample.TiledPlayer">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAgAAAAAAAAAAAAAAAQAAAAAAAAAAQAA=</HashCode>
+      <FileName>TiledPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiledSpriteExample.TiledSprite">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iASAAAAAAAAAAgAAAAgAAABgECAAJEAIAAQACIAAAIE=</HashCode>
+      <FileName>TiledSprite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiledSpriteExample.TileLayer">
+    <Position X="10.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAIBAIgAAAAAAAAAEAAAAAAoAAAAAAAAAAAA=</HashCode>
+      <FileName>TileLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TiledSpriteExample.TileRef">
+    <Position X="4.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TileRef.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Engine.Engines.InputEngine" Collapsed="true">
+    <Position X="10.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQgAICAgAAAAACBAAAIAQAAqAgAARAAAigEAAATCAI=</HashCode>
+      <FileName>InputEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="TiledSpriteExample.TileTypes">
+    <Position X="3.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAIAAAAIAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Game1.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
